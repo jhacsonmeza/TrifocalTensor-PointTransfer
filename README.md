@@ -1,0 +1,5 @@
+# Point Transfer in the Third View Using the Trifocal Tensor
+
+Notes on point transfer using the trifocal tensor with a three-view system composed of two cameras and a projector, i.e., in the left a camera as the first view, in the middle the projector as the second view, and in the right another camera as the third view.
+
+First, we use a target of three circles to establish correspondences with the center of the circles between the two camera images. Then with the aid of fringe patterns, we estimate the coordinates in the projector view. The idea with this example is to calculate the center coordinates in the (third view) right camera with the trifocal tensor of the system and compare it with the ground truth (estimated with a circles detection algorithm). It is important to note that we use a calibrated system for this example.
